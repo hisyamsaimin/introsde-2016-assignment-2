@@ -45,13 +45,13 @@ public class ClientApp {
    * @throws Exception
    */
   public static void main(String[] args) throws Exception {
-    System.out.println(">>>>> Server URL: http://anadaniel-introsde-a02.herokuapp.com");
+    System.out.println(">>>>> Server URL: https://agile-sierra-35039.herokuapp.com/");
     /*
     **********************************************************************************
     ************************************ CONFIG **************************************
     **********************************************************************************
     */
-    serverUri = "http://anadaniel-introsde-a02.herokuapp.com";
+    serverUri = "https://agile-sierra-35039.herokuapp.com/";
     client = ClientBuilder.newClient(new ClientConfig());
     service = client.target( getBaseURI() );
     xmlLogWriter = new PrintWriter("client-server-xml.log", "UTF-8");
