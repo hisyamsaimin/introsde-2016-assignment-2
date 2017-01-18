@@ -147,7 +147,7 @@ public class ClientApp {
     printRequestDetails(3, "PUT", reqPath, "application/xml", "application/xml");
 
     // Perform JSON Request
-    performPostPutRequest(reqPath, "application/json", "PUT", "application/json", "{\"firstname\":\"Ana JSON\"}");
+    performPostPutRequest(reqPath, "application/json", "PUT", "application/json", "{\"firstname\":\"Hisyam\"}");
     
     // Print JSON Request
     printRequestDetails(3, "PUT", reqPath, "application/json", "application/json");
@@ -229,8 +229,8 @@ public class ClientApp {
                 "POST", 
                 "application/json", 
                 "{" +
-                  "\"firstname\": \"Chuck JSON\"," +
-                  "\"lastname\": \"Norris\"," +
+                  "\"firstname\": \"Hanis\"," +
+                  "\"lastname\": \"Saimin\"," +
                   "\"birthdate\": \"1945-01-01\"" +
                 "}"
     );
