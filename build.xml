@@ -15,7 +15,7 @@
        # The target "download-ivy" and "install-ivy" will download the ivy jar and place it in the "ivy" folder
        # 
 -->
-    <project name="LocalDatabaseService" basedir="." xmlns:ivy="antlib:org.apache.ivy.ant">
+    <project name="assignment02" basedir="." xmlns:ivy="antlib:org.apache.ivy.ant">
         <!-- PART 1: Ivy properties, download, installation and configuration -->
         <property name="ivy.install.version" value="2.4.0-rc1" />
         <property name="ivy.jar.dir" value="${basedir}/ivy" />
@@ -116,7 +116,21 @@
                 </classpath>
             </java>
         </target>
-       
+       <target name="start.client" depends="install">
+    <echo message=">>>>>>>>>> Client App Starting" />
+    <java classname="introsde.assignment02.client.ClientApp" classpath="${build.dir}" fork="true">
+      <arg value="$JAVA_OPTS -cp" />
+      <classpath>
+        <path location="build" />
+        <fileset dir="WebContent/WEB-INF/lib">
+            <include name="**/*.jar" />
+            <include name="*.jar" />
+        </fileset>
+      </classpath>
+    </java>
+    <echo message=">>>>>>>>>> Client App Finished" />
+    <echo message=">>>>>>>>>> Check Logs" />
+  </target>
         <!-- make sure you have created first the WebContent folder, including a META-INF folder, WEB-INF/web.xml file and WEB-INF/lib folder -->
         <target name="create.war" depends="install">
             <war destfile="LocalDatabaseService.war" webxml="${web.dir}/WebContent/WEB-INF/web.xml">
