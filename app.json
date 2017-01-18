@@ -1,7 +1,7 @@
 {
-  "name": "IntroSDE Laboratory 7",
+  "name": "IntroSDE assignment 02",
   "description": "CRUD REST with Persistence",
-  "repository": "https://github.com/hisyamsaimin/sdeassignment02",
+  "repository": "https://github.com/hisyamsaimin/sdeassignment02.git",
   "logo": "https://avatars0.githubusercontent.com/u/11249211?v=3&s=200",
   "image": "heroku/java",
   "env": {
