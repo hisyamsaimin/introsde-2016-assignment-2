@@ -104,8 +104,8 @@
             </copy>
         </target>
         <target name="start" depends="install">
-            <echo message="app start introsde.assignment02.client.ClientApp in ${build.dir}" />
-            <java classname="introsde.assignment02.client.ClientApp" classpath="${build.dir}" fork="true">
+            <echo message="app start introsde.assignment02.App in ${build.dir}" />
+            <java classname="introsde.assignment02.App" classpath="${build.dir}" fork="true">
                 <arg value="$JAVA_OPTS  -cp" />
                 <classpath>
                     <path location="build" />
