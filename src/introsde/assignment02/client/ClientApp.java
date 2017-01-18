@@ -131,7 +131,7 @@ public class ClientApp {
                 "application/xml",
                 "PUT", 
                 "application/xml", 
-                "<person><firstname>Ana XML</firstname></person>"
+                "<person><firstname>Hisyam</firstname></person>"
     );
 
     // Parse response body - Single Person
@@ -166,8 +166,8 @@ public class ClientApp {
                 "POST", 
                 "application/xml", 
                 "<person>" +
-                  "<firstname>Chuck XML</firstname>" +
-                  "<lastname>Norris</lastname>" +
+                  "<firstname>Haizat</firstname>" +
+                  "<lastname>Saimin</lastname>" +
                   "<birthdate>1945-01-01</birthdate>" +
                   "<healthProfile>" +
                     "<measure>" +
